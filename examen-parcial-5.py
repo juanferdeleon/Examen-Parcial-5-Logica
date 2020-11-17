@@ -1,4 +1,9 @@
-string = input("Enter String: ")
+
+f = open("input.txt", "r")
+
+print("Reading file...")
+
+string = f.readline()
 length = len(string) + 2
 tape = ['B']*length
 i = 1
