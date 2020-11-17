@@ -1,0 +1,11 @@
+['B', 'b', 'b', 'b', 'B'] with tapehead at index 1 on state 0
+['B', 'U', 'b', 'b', 'B'] with tapehead at index 2 on state 4
+['B', 'U', 'b', 'b', 'B'] with tapehead at index 3 on state 4
+['B', 'U', 'b', 'b', 'B'] with tapehead at index 4 on state 4
+['B', 'U', 'b', 'b', 'B'] with tapehead at index 3 on state 15
+['B', 'U', 'b', 'b', 'B'] with tapehead at index 2 on state 15
+['B', 'U', 'b', 'b', 'B'] with tapehead at index 1 on state 15
+['B', 'U', 'b', 'b', 'B'] with tapehead at index 2 on state 16
+['B', 'U', 'V', 'b', 'B'] with tapehead at index 3 on state 17
+['B', 'U', 'V', 'U', 'B'] with tapehead at index 4 on state 16
+String not accepted on state 16

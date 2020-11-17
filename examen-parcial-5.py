@@ -1,7 +1,24 @@
+import time
+
+def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█', printEnd = "\r"):
+    percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
+    filledLength = int(length * iteration // total)
+    bar = fill * filledLength + '-' * (length - filledLength)
+    print(f'\r{prefix} |{bar}| {percent}% {suffix}', end = printEnd)
+    if iteration == total: 
+        print()
 
 f = open("input.txt", "r")
-
 print("Reading file...")
+
+items = list(range(0, 20))
+l = len(items)
+
+printProgressBar(0, l, prefix = 'Progress:', suffix = 'Complete', length = 50)
+for i, item in enumerate(items):
+    time.sleep(0.1)
+    printProgressBar(i + 1, l, prefix = 'Progress:', suffix = 'Complete', length = 50)
+
 
 string = f.readline()
 length = len(string) + 2
@@ -32,8 +49,9 @@ oldtapehead = -1
 accept = False
 while(oldtapehead != tapehead): #if tapehead not moving that means terminate Turing machine
     oldtapehead = tapehead
-    print(tape , "with tapehead at index", tapehead, "on state" , state)
-    
+    #print(tape , "with tapehead at index", tapehead, "on state" , state)
+    with open('output.txt', 'a+') as the_file:
+        the_file.write(str(tape) + " with tapehead at index " + str(tapehead) + " on state " + str(state) + '\n')
     if state == 0:
         if action(a, X, R, 1) or action(B, B, R, 10) or action(Z, Z, R, 7) or action(b, U, R, 4):
             pass
@@ -100,5 +118,10 @@ while(oldtapehead != tapehead): #if tapehead not moving that means terminate Tur
             
 if accept:
     print("String accepted on state = ", state)
+    with open('output.txt', 'a+') as the_file:
+        the_file.write("String accepted on state " + str(state) + '\n')
 else:
-    print("String not accepted on state = ", state)
+    with open('output.txt', 'a+') as the_file:
+        the_file.write("String not accepted on state " + str(state) + '\n')
+
+print("Program finished successfully, thanks for using...")
