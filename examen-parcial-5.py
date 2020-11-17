@@ -8,7 +8,7 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, 
     if iteration == total: 
         print()
 
-f = open("input.txt", "r")
+f = open("loop_input.txt", "r")
 print("Reading file...")
 
 items = list(range(0, 20))
@@ -25,6 +25,9 @@ length = len(string) + 2
 tape = ['B']*length
 i = 1
 tapehead = 1
+
+with open('loop_output.txt', 'a+') as the_file:
+    the_file.write("Expression: " + str(string) + '\n')
 
 def action(input_char, replace_with, move, new_state):
     global tapehead, state
@@ -50,7 +53,7 @@ accept = False
 while(oldtapehead != tapehead): #if tapehead not moving that means terminate Turing machine
     oldtapehead = tapehead
     #print(tape , "with tapehead at index", tapehead, "on state" , state)
-    with open('output.txt', 'a+') as the_file:
+    with open('loop_output.txt', 'a+') as the_file:
         the_file.write(str(tape) + " with tapehead at index " + str(tapehead) + " on state " + str(state) + '\n')
     if state == 0:
         if action(a, X, R, 1) or action(B, B, R, 10) or action(Z, Z, R, 7) or action(b, U, R, 4):
@@ -117,11 +120,10 @@ while(oldtapehead != tapehead): #if tapehead not moving that means terminate Tur
         
             
 if accept:
-    print("String accepted on state = ", state)
-    with open('output.txt', 'a+') as the_file:
+    with open('loop_output.txt', 'a+') as the_file:
         the_file.write("String accepted on state " + str(state) + '\n')
 else:
-    with open('output.txt', 'a+') as the_file:
+    with open('loop_output.txt', 'a+') as the_file:
         the_file.write("String not accepted on state " + str(state) + '\n')
 
 print("Program finished successfully, thanks for using...")

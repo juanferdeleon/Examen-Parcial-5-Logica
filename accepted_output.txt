@@ -1,0 +1,28 @@
+Expression: abbabb
+['B', 'a', 'b', 'b', 'a', 'b', 'b', 'B'] with tapehead at index 1 on state 0
+['B', 'X', 'b', 'b', 'a', 'b', 'b', 'B'] with tapehead at index 2 on state 1
+['B', 'X', 'b', 'b', 'a', 'b', 'b', 'B'] with tapehead at index 3 on state 2
+['B', 'X', 'b', 'b', 'a', 'b', 'b', 'B'] with tapehead at index 4 on state 2
+['B', 'X', 'b', 'b', 'Z', 'b', 'b', 'B'] with tapehead at index 3 on state 3
+['B', 'X', 'b', 'b', 'Z', 'b', 'b', 'B'] with tapehead at index 2 on state 3
+['B', 'X', 'b', 'b', 'Z', 'b', 'b', 'B'] with tapehead at index 1 on state 3
+['B', 'X', 'b', 'b', 'Z', 'b', 'b', 'B'] with tapehead at index 2 on state 0
+['B', 'X', 'U', 'b', 'Z', 'b', 'b', 'B'] with tapehead at index 3 on state 4
+['B', 'X', 'U', 'b', 'Z', 'b', 'b', 'B'] with tapehead at index 4 on state 4
+['B', 'X', 'U', 'b', 'Z', 'b', 'b', 'B'] with tapehead at index 5 on state 5
+['B', 'X', 'U', 'b', 'Z', 'V', 'b', 'B'] with tapehead at index 4 on state 6
+['B', 'X', 'U', 'b', 'Z', 'V', 'b', 'B'] with tapehead at index 3 on state 6
+['B', 'X', 'U', 'b', 'Z', 'V', 'b', 'B'] with tapehead at index 2 on state 6
+['B', 'X', 'U', 'b', 'Z', 'V', 'b', 'B'] with tapehead at index 3 on state 0
+['B', 'X', 'U', 'U', 'Z', 'V', 'b', 'B'] with tapehead at index 4 on state 4
+['B', 'X', 'U', 'U', 'Z', 'V', 'b', 'B'] with tapehead at index 5 on state 5
+['B', 'X', 'U', 'U', 'Z', 'V', 'b', 'B'] with tapehead at index 6 on state 5
+['B', 'X', 'U', 'U', 'Z', 'V', 'V', 'B'] with tapehead at index 5 on state 6
+['B', 'X', 'U', 'U', 'Z', 'V', 'V', 'B'] with tapehead at index 4 on state 6
+['B', 'X', 'U', 'U', 'Z', 'V', 'V', 'B'] with tapehead at index 3 on state 6
+['B', 'X', 'U', 'U', 'Z', 'V', 'V', 'B'] with tapehead at index 4 on state 0
+['B', 'X', 'U', 'U', 'Z', 'V', 'V', 'B'] with tapehead at index 5 on state 7
+['B', 'X', 'U', 'U', 'Z', 'V', 'V', 'B'] with tapehead at index 6 on state 8
+['B', 'X', 'U', 'U', 'Z', 'V', 'V', 'B'] with tapehead at index 7 on state 8
+['B', 'X', 'U', 'U', 'Z', 'V', 'V', 'B'] with tapehead at index 8 on state 9
+String accepted on state 9
